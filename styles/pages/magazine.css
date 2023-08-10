@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 450px;
 }
 
 .magazine-title {
-    font-size: 18px;
-    font-weight: bold;
     background-color: var(--accent);
     color: var(--text-color);
-    padding: 0 20px;
+    padding: 20px 30px;
+}
+
+.magazine-title h2 {
+    font-size: 17px;
+    font-weight: 900;
+    margin: 0;
 }
 
 #magazine div {
@@ -26,7 +28,7 @@
 
 #magazine div p {
     margin: 0;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 30px;
 }
 
 #magazine div:nth-child(odd) {
@@ -34,5 +36,5 @@
 }
 
 .item-date {
-    color: var(--elements-background-active);
+    color: #8d8d8d;
 }

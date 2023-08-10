@@ -15,91 +15,94 @@
 
 <body>
 
-<header class="header">
+<header>
     <div class="header-top">
+        <div class="hamburger">
+            ☰
+        </div>
 
-        <div class="flex-row">
+        <nav>
             <a href="#" class="header-link">Главная</a>
             <a href="#" class="header-link">Обследования и анализы</a>
             <a href="#" class="header-link">Запись онлайн</a>
-        </div>
+        </nav>
 
-        <div class="flex-row">
-            <button id="person-date"><i class="fa-regular fa-user"></i> Личные данные</button>
-            <button><i class="fa-solid fa-arrow-right-from-bracket"></i> Выход</button>
+        <div class="actions">
+            <button id="person-date"><img src="/images/icons/user.png" alt="User"> Личные данные</button>
+            <button><img src="/images/icons/logout.png" alt="Logout"> Выход</button>
         </div>
 
     </div>
-    <div class="header-button">
+    <div class="header-bottom">
 
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
 
         <div class="flex-row">
-            <p class="user-name">Тестов Иван Иванович</p>
+            <p class="username">Тестов Иван Иванович</p>
         </div>
 
     </div>
 
 </header>
 
-<main class="main">
+<main>
 
-    <div class="side-main">
+    <aside>
 
         <div class="filter">
 
             <div class="filter-title">
-                <h3>Фильтры исследований</h3>
+                <h2>Фильтры исследований</h2>
             </div>
+
 
             <div class="filter-content">
-
-                <div class="filter-items">
-                    <div class="item">
-                        <img src="images/icons/mri.png" alt="mri">
-                        <p>МРТ</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/kt.png" alt="ct">
-                        <p>КТ</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/x-ray.png" alt="x-ray">
-                        <p>Рентген</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/ultrasound.png" alt="ultrasound">
-                        <p>УЗИ</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/functional_dyspepsia.png" alt="functional dyspepsia">
-                        <p>ФД</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/consultation.png" alt="conclusion">
-                        <p>Консультация</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/icons/analyzes.png" alt="analysis">
-                        <p>Анализы</p>
-                    </div>
-
+                <figure>
+                    <ul>
+                        <li>
+                            <img src="images/icons/mri.png" alt="mri">
+                            <p>МРТ</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/kt.png" alt="ct">
+                            <p>КТ</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/x-ray.png" alt="x-ray">
+                            <p>Рентген</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/ultrasound.png" alt="ultrasound">
+                            <p>УЗИ</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/functional_dyspepsia.png" alt="functional dyspepsia">
+                            <p>ФД</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/consultation.png" alt="conclusion">
+                            <p>Конс</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/analyzes.png" alt="analysis">
+                            <p>Анализы</p>
+                        </li>
+                    </ul>
+                    <img src="images/people.png" alt="people" class="people">
+                </figure>
+                <div class="colors-vial">
+                    <img src="images/vials/red_vial.png" alt="red vial">
+                    <img src="images/vials/gold_vial.png" alt="gold vial">
+                    <img src="images/vials/blue_vial.png" alt="blue vial">
+                    <img src="images/vials/white_vial.png" alt="white vial">
+                    <img src="images/vials/brown_vial.png" alt="brown vial">
+                    <img src="images/vials/gray_vial.png" alt="gray vial">
                 </div>
 
-                <img src="images/people.png" alt="people" class="people">
+                <button class="filter-button">Показать все исследование <span>☰</span></button>
             </div>
-            <div class="colors-vial">
-                <img src="images/vials/red_vial.png" alt="red vial">
-                <img src="images/vials/gold_vial.png" alt="gold vial">
-                <img src="images/vials/blue_vial.png" alt="blue vial">
-                <img src="images/vials/white_vial.png" alt="white vial">
-                <img src="images/vials/brown_vial.png" alt="brown vial">
-                <img src="images/vials/gray_vial.png" alt="gray vial">
-            </div>
-
-            <button class="filter-button">Показать все исследование <i class="fa-solid fa-bars"></i></button>
         </div>
 
         <div class="magazine">
@@ -111,16 +114,14 @@
             </div>
         </div>
 
-    </div>
+    </aside>
 
     <div class="content-main">
         <div class="main-title">
             <img src="images/title.png" alt="title">
         </div>
-        <div class="advantages-section">
-            <div class="advantages-title">
-                <h1>Возможности атлас пациента</h1>
-            </div>
+        <section class="advantages-section">
+            <h2>Возможности атлас пациента</h2>
             <div class="advantages">
                 <div class="advantage">
                     <div class="advantage-image">
@@ -152,34 +153,30 @@
                         удаленно</p>
                 </div>
             </div>
-        </div>
-        <div class="manual">
+        </section>
+        <section class="manual">
             <h2>Инструкция</h2>
-            <div class="manual-paragraph">
-                <div class="manual-description">
-                    <p class="manual-number">01</p>
+            <figure>
+                <img src="images/info_1.png" alt="info">
+                <figcaption>
+                    <div class="manual-number"><p>01</p></div>
                     <div class="manual-text">
-                        <h3>Навигация по исследованиям</h3>
+                        <h6>Навигация по исследованиям</h6>
                         <p>Для ознакомления с исследованиями выберите один из разделов меню</p>
                     </div>
-                </div>
-                <div class="manual-image">
-                    <img src="images/info_1.png" alt="info">
-                </div>
-            </div>
-            <div class="manual-paragraph">
-                <div class="manual-image">
-                    <img src="images/info_2.png" alt="info">
-                </div>
-                <div class="manual-description">
-                    <p class="manual-number">02</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/info_2.png" alt="info">
+                <figcaption>
+                    <div class="manual-number"><p>02</p></div>
                     <div class="manual-text">
-                        <h3>Динамика измерений</h3>
+                        <h6>Динамика измерений</h6>
                         <p>Для просмотра динамики исследований нажмите на кнопку</p>
                     </div>
-                </div>
-            </div>
-        </div>
+                </figcaption>
+            </figure>
+        </section>
     </div>
     <div class="module-window-holder hidden" id="module-window">
         <div class="module-window">
@@ -217,14 +214,13 @@
     </div>
 </main>
 
-<footer class="footer">
+<footer>
     <p>© 2018 Atlas Patient.</p>
-    <button>На верх <i class="fa-solid fa-arrow-up"></i></button>
+    <a href="#top">На верх ↑</a>
 </footer>
 
-<Script src="https://kit.fontawesome.com/4217917e45.js" crossOrigin="anonymous"></Script>
-<Script src="scripts/magazine.js"></Script>
-<Script src="scripts/privacy.js"></Script>
+<script src="scripts/magazine.js"></script>
+<script src="scripts/privacy.js"></script>
 
 </body>
 </html>

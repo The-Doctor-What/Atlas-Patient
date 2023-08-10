@@ -1,51 +1,70 @@
-.header {
+header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-top, .header-button {
+.actions {
+    display: flex;
+    gap: 32px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header-top, .header-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .header-top {
-    height: 40px;
-    background-color: var(--elements-background);;
+    background-color: var(--elements-background);
+    padding: 12px 40px;
 }
 
 .header-top a {
-    color: #111;
+    color: inherit;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px;
-    border-radius: 9px;
-    transition: background-color 0.2s ease-in-out;
 }
 
 .header-top button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 9px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-top button, .header-top a {
     transition: background-color 0.2s ease-in-out;
 }
 
 .header-top button:hover, .header-top a:hover {
     background-color: var(--elements-background-active);
-    transition: background-color 0.2s ease-in-out;
 }
 
-.header-button {
-    height: 120px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.header-bottom {
+    padding: 26px 40px;
 }
 
-.user-name {
-    font-size: 24px;
+.username {
     font-weight: bold;
+    text-align: right;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
 }
