@@ -77,7 +77,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
     .input-holder {
         flex-direction: column;
     }

@@ -191,7 +191,8 @@
                 <div class="input-holder">
                     <label for="phone">Телефон</label>
                     <input type="text" id="phone" placeholder="+7 (999) 999-99-99"
-                           pattern="(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})" required>
+                           pattern="(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})"
+                           required>
                 </div>
                 <div class="input-holder">
                     <label for="email">Почта</label>
@@ -199,11 +200,17 @@
                 </div>
                 <div class="input-holder">
                     <label for="password">Пароль</label>
-                    <input type="password" id="password" placeholder="********" required>
+                    <div>
+                        <button id="password-hide">👁</button>
+                        <input type="password" id="password" placeholder="********" required>
+                    </div>
                 </div>
                 <div class="input-holder">
                     <label for="password-repeat">Подтверждение пароля</label>
-                    <input type="password" id="password-repeat" placeholder="********" required>
+                    <div>
+                        <button id="password-repeat-hide">👁</button>
+                        <input type="password" id="password-repeat" placeholder="********" required>
+                    </div>
                 </div>
             </div>
             <div class="module-window-footer">
