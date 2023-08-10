@@ -14,7 +14,7 @@
 
 .header-top {
     height: 40px;
-    background-color: #e8e8e8;
+    background-color: var(--elements-background);;
 }
 
 .header-top a {
@@ -36,7 +36,7 @@
 }
 
 .header-top button:hover, .header-top a:hover {
-    background-color: #edeeed;
+    background-color: var(--elements-background-active);
     transition: background-color 0.2s ease-in-out;
 }
 

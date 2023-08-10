@@ -51,11 +51,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5ab678;
+    background-color: var(--accent);
 }
 
 .gray-image {
-    background-color: #e8e8e8;
+    background-color: var(--elements-background);
 }
 
 .advantage-text {
@@ -85,7 +85,7 @@
 .manual-number {
     font-size: 128px;
     font-weight: bold;
-    color: #e8e8e8;
+    color: var(--elements-background-active);
     margin: 10px;
 }
 

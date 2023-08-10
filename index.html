@@ -25,7 +25,7 @@
         </div>
 
         <div class="flex-row">
-            <button><i class="fa-regular fa-user"></i> Личные данные</button>
+            <button id="person-date"><i class="fa-regular fa-user"></i> Личные данные</button>
             <button><i class="fa-solid fa-arrow-right-from-bracket"></i> Выход</button>
         </div>
 
@@ -181,7 +181,40 @@
             </div>
         </div>
     </div>
-
+    <div class="module-window-holder hidden" id="module-window">
+        <div class="module-window">
+            <div class="module-window-header">
+                <h1 id="module-window-title">Личные данные</h1>
+            </div>
+            <div id="module-window-content">
+                <div class="input-holder">
+                    <label for="name">Фамилия Имя Отчество</label>
+                    <input type="text" id="name" placeholder="Тестов Иван Иванович" required>
+                </div>
+                <div class="input-holder">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" placeholder="+7 (999) 999-99-99"
+                           pattern="(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})" required>
+                </div>
+                <div class="input-holder">
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" placeholder="johnsmith@gmail.com" required>
+                </div>
+                <div class="input-holder">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+                <div class="input-holder">
+                    <label for="password-repeat">Подтверждение пароля</label>
+                    <input type="password" id="password-repeat" placeholder="********" required>
+                </div>
+            </div>
+            <div class="module-window-footer">
+                <button id="module-window-close-button">Закрыть</button>
+                <button id="module-window-execute-button">Сохранить</button>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">
@@ -191,6 +224,7 @@
 
 <Script src="https://kit.fontawesome.com/4217917e45.js" crossOrigin="anonymous"></Script>
 <Script src="scripts/magazine.js"></Script>
+<Script src="scripts/privacy.js"></Script>
 
 </body>
 </html>

@@ -3,8 +3,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #5ab678;
-    color: #f1f1f1;
+    background-color: var(--accent);
+    color: var(--text-color);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -18,11 +18,11 @@
     padding: 5px;
     margin: 15px;
     border-radius: 9px;
-    color: #f1f1f1;
+    color: var(--text-color);
     transition: background-color 0.2s ease-in-out;
 }
 
 .footer button:hover {
-    background-color: #3a7d4e;
+    background-color: var(--active-accent);
     transition: background-color 0.2s ease-in-out;
 }

@@ -10,8 +10,8 @@
 .filter-title {
     font-size: 20px;
     font-weight: bold;
-    background-color: #5ab678;
-    color: #f1f1f1;
+    background-color: var(--accent);
+    color: var(--text-color);
     padding: 0 20px;
 }
 
@@ -51,14 +51,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
-    background-color: #5ab678;
-    color: #f1f1f1;
+    background-color: var(--accent);
+    color: var(--text-color);
     padding: 10px;
     border: none;
     transition: background-color 0.2s ease-in-out;
 }
 
 .filter-button:hover {
-    background-color: #4b9c64;
+    background-color: var(--active-accent);
     transition: background-color 0.2s ease-in-out;
 }
