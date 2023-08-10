@@ -1,0 +1,38 @@
+.magazine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 450px;
+}
+
+.magazine-title {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5ab678;
+    color: #f1f1f1;
+    padding: 0 20px;
+}
+
+#magazine div {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#magazine div p {
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+#magazine div:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+.item-date {
+    color: #949494;
+}
