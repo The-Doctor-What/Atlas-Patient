@@ -1,5 +1,44 @@
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+}
+
+.card {
+  width: 160px;
+  height: 250px;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 4px;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.red-card {
+  color: red;
+}
+
+.number-bottom {
+  transform: rotate(180deg);
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-botton, .logo-top {
+  height: 85px;
+  object-fit: cover;
+  object-position:top;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-botton {
+  transform: rotate(180deg);
 }
