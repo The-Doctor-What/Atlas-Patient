@@ -11,212 +11,25 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/pages/index.css">
+
+    <script src="https://kit.fontawesome.com/4217917e45.js" crossOrigin="anonymous"></script>
 </head>
 
 <body>
 
 <header>
-    <div class="header-top">
-        <div class="hamburger">
-            ☰
-        </div>
-
-        <nav>
-            <a href="#" class="header-link">Главная</a>
-            <a href="#" class="header-link">График работы</a>
-            <a href="#" class="header-link">Настройки</a>
-        </nav>
-
-        <div class="actions">
-            <button id="person-date"><img src="images/icons/user.png" alt="User"> The Doctor What</button>
-            <button><img src="images/icons/logout.png" alt="Logout"> Выход</button>
-        </div>
-
+    <div class="header-links">
+        <a href="#" class="header-link"><i class="fa-solid fa-house"></i> Главная</a>
+        <a href="#" class="header-link"><i class="fa-solid fa-calendar-days"></i> График работы</a>
+        <a href="#" class="header-link"><i class="fa-solid fa-gear"></i> Настройки</a>
     </div>
-
+    <div class="actions">
+        <button id="person-date"><i class="fa-solid fa-user"></i> The Doctor What</button>
+        <button><i class="fa-solid fa-right-from-bracket"></i> Выход</button>
+    </div>
 </header>
 
 <main>
-
-    <aside>
-
-        <div class="filter">
-
-            <div class="filter-title">
-                <h2>Фильтры исследований</h2>
-            </div>
-
-
-            <div class="filter-content">
-                <figure>
-                    <ul>
-                        <li>
-                            <img src="images/icons/mri.png" alt="mri">
-                            <p>МРТ</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/kt.png" alt="ct">
-                            <p>КТ</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/x-ray.png" alt="x-ray">
-                            <p>Рентген</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/ultrasound.png" alt="ultrasound">
-                            <p>УЗИ</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/functional_dyspepsia.png" alt="functional dyspepsia">
-                            <p>ФД</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/consultation.png" alt="conclusion">
-                            <p>Конс</p>
-                        </li>
-                        <li>
-                            <img src="images/icons/analyzes.png" alt="analysis">
-                            <p>Анализы</p>
-                        </li>
-                    </ul>
-                    <img src="images/people.png" alt="people" class="people">
-                </figure>
-                <div class="colors-vial">
-                    <img src="images/vials/red_vial.png" alt="red vial">
-                    <img src="images/vials/gold_vial.png" alt="gold vial">
-                    <img src="images/vials/blue_vial.png" alt="blue vial">
-                    <img src="images/vials/white_vial.png" alt="white vial">
-                    <img src="images/vials/brown_vial.png" alt="brown vial">
-                    <img src="images/vials/gray_vial.png" alt="gray vial">
-                </div>
-
-                <button class="filter-button">Показать все исследование <span>☰</span></button>
-            </div>
-        </div>
-
-        <div class="magazine">
-            <div class="magazine-title">
-                <h2>Журнал исследований</h2>
-            </div>
-            <div id="magazine">
-                <p>Загружается...</p>
-            </div>
-        </div>
-
-    </aside>
-
-    <div class="content-main">
-        <div class="main-title">
-            <img src="images/title.png" alt="title">
-        </div>
-        <section class="advantages-section">
-            <h2>Возможности атлас пациента</h2>
-            <div class="advantages">
-                <div class="advantage">
-                    <div class="advantage-image">
-                        <img src="images/icons/diagnosis.png" alt="diagnosis">
-                    </div>
-                    <p class="advantage-text">В атласе пациента можно посмотреть все заключения по всем
-                        исследованиям</p>
-                </div>
-                <div class="advantage">
-                    <div class="advantage-image gray-image">
-                        <img src="images/icons/print.png" alt="print">
-                    </div>
-                    <p class="advantage-text">Из атласа пациента можно распечатать любое заключение</p>
-                </div>
-                <div class="advantage">
-                    <div class="advantage-image gray-image">
-                        <img src="images/icons/schedule.png" alt="schedule">
-                    </div>
-                    <div>
-                        <p class="advantage-text">Наглядное представление динамики изменений по каждому
-                            показателю</p>
-                    </div>
-                </div>
-                <div class="advantage">
-                    <div class="advantage-image">
-                        <img src="images/icons/heart.png" alt="heart">
-                    </div>
-                    <p class="advantage-text">Атлас пациента позволяет посмотреть результаты исследований
-                        удаленно</p>
-                </div>
-            </div>
-        </section>
-        <section class="manual">
-            <h2>Инструкция</h2>
-            <figure>
-                <img src="images/info_1.png" alt="info">
-                <figcaption>
-                    <div class="manual-number"><p>01</p></div>
-                    <div class="manual-text">
-                        <h6>Навигация по исследованиям</h6>
-                        <p>Для ознакомления с исследованиями выберите один из разделов меню</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/info_2.png" alt="info">
-                <figcaption>
-                    <div class="manual-number"><p>02</p></div>
-                    <div class="manual-text">
-                        <h6>Динамика измерений</h6>
-                        <p>Для просмотра динамики исследований нажмите на кнопку</p>
-                    </div>
-                </figcaption>
-            </figure>
-        </section>
-    </div>
-    <div class="module-window-holder hidden" id="module-window">
-        <div class="module-window">
-            <div class="module-window-header">
-                <h1 id="module-window-title">Личные данные</h1>
-            </div>
-            <div id="module-window-content">
-                <div class="input-holder">
-                    <label for="name">Фамилия Имя Отчество</label>
-                    <input type="text" id="name" placeholder="Тестов Иван Иванович" required>
-                </div>
-                <div class="input-holder">
-                    <label for="phone">Телефон</label>
-                    <input type="text" id="phone" placeholder="+7 (999) 999-99-99"
-                           pattern="(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})"
-                           required>
-                </div>
-                <div class="input-holder">
-                    <label for="email">Почта</label>
-                    <input type="email" id="email" placeholder="johnsmith@gmail.com" required>
-                </div>
-                <div class="input-holder">
-                    <label for="password">Пароль</label>
-                    <div>
-                        <button id="password-hide">👁</button>
-                        <input type="password" id="password" placeholder="********" required>
-                    </div>
-                </div>
-                <div class="input-holder">
-                    <label for="password-repeat">Подтверждение пароля</label>
-                    <div>
-                        <button id="password-repeat-hide">👁</button>
-                        <input type="password" id="password-repeat" placeholder="********" required>
-                    </div>
-                </div>
-            </div>
-            <div class="module-window-footer">
-                <button id="module-window-close-button">Закрыть</button>
-                <button id="module-window-execute-button">Сохранить</button>
-            </div>
-        </div>
-    </div>
-</main>
-
-<footer>
-    <p>© 2018 Atlas Patient.</p>
-    <a href="#top">На верх ↑</a>
-</footer>
-
-<script src="scripts/magazine.js"></script>
-<script src="scripts/privacy.js"></script>
 
 </body>
 </html>
